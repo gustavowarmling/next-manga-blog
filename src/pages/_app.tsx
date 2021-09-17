@@ -10,6 +10,5 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyle />
     </>
     )
-
 }
 export default MyApp
