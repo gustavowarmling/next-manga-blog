@@ -1,6 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+  :root {
+        --blue-300: #202b36;
+        --blue-500: #141924;
+        --blue-900: #0D1017;
+    }
+  
   * {
     margin: 0;
     box-sizing: border-box;
@@ -17,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: #0D1017;
+    background: var(--blue-900);
     color: #fff;
   }
 
