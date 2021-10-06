@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.form`
-    
-    width: 16rem;
+export const Container = styled.label`
+    max-width: 16rem;
+    width: 100%;
     height: 3rem;
     display: grid;
     grid-template-columns: 9fr 1fr;
@@ -14,6 +14,8 @@ export const Container = styled.form`
     padding: 0.2rem 0.8rem;
     border-radius: 8px;
 
+    transition: all 0.3s ease-out;
+
     input {
         padding: 0.2rem;
         border: none;
@@ -23,20 +25,11 @@ export const Container = styled.form`
         font-size: 1rem;
     }
 
-    button {
-        border: none;
-        background: none;
-        cursor: pointer;
-        display: flex;
-        height: 100%;
-        align-items: center;
-
-        svg {
-            font-size: 1.5rem;
-            width: 100%
-        }
+    svg {
+        font-size: 1.5rem;
+        width: 100%
     }
-
+    
     &:hover {
         filter: brightness(0.9);
     }

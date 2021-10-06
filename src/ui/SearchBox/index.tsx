@@ -15,9 +15,7 @@ export function SearchBox() {
     return (
         <Container onSubmit={handleSubmit}>
             <input type="search" onChange={(e) => setSearch(e.target.value)}/>
-            <button type="submit">
-                <BiSearch color='#fff'/>
-            </button>
+            <BiSearch color='#fff'/>
         </Container>
     )
 }

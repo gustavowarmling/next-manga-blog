@@ -19,7 +19,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: #0D1017;
     color: #fff;
-
   }
 
   a {
@@ -27,4 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     color: #fff;
   }
 
+  body, input, textarea, select, button {
+    font: 400 1rem "Poppins", sans-serif;
+  }
 `

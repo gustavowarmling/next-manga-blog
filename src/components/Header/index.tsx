@@ -1,14 +1,32 @@
-import { SideMenu } from '../SideMenu';
+import { Dispatch, SetStateAction } from 'react';
+
 import { SearchBox } from '../../ui/SearchBox';
+import { Container, Content, LogoWrapper, StyledButton }  from './styles';
+import { Logo } from '../../ui/Logo';
+import { IoMenuOutline } from 'react-icons/io5';
 
-import { Container, Content }  from './styles';
+interface HeaderProps {
+    setIsOpen: Dispatch<SetStateAction<boolean>>;
+}
 
-export function Header() {
+export function Header({ setIsOpen }: HeaderProps) {
+    function handleOpenMenu() {
+        setIsOpen(true);
+    }
+
     return (
         <Container>
             <Content>
-                <SideMenu />
-                <p>logo</p>
+                <div>
+                    <StyledButton onClick={handleOpenMenu}>
+                        <IoMenuOutline color='white'/>
+                    </StyledButton>
+
+                    <LogoWrapper>
+                        <Logo />
+                    </LogoWrapper>
+                </div>
+
                 <SearchBox /> 
             </Content>
         </Container>
