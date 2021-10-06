@@ -1,7 +1,7 @@
 import { GlobalStyle } from '../styles/globals'
 import type { AppProps } from 'next/app'
 
-import { Header } from '../components/Header'
+import Header from '../components/Header'
 import { SideMenu } from '../components/SideMenu'
 import { useState } from 'react';
 

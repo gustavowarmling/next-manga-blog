@@ -1,9 +1,13 @@
-import type { NextPage } from 'next'
+import Card from '../components/Card'
+import { Container }  from './styles';
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
-    <></>
+    <>
+      <Container>
+        <h1>Teste</h1>
+        <Card />
+      </Container>
+    </>
   )
 }
-
-export default Home
