@@ -17,8 +17,9 @@ export const Container = styled.div`
         }
 		
         &:before {
-			opacity: 1
+			opacity: 1;
         }
+
 		.hideTags {
 			opacity: 1;
 			transform: translateY(-22rem);
@@ -27,16 +28,16 @@ export const Container = styled.div`
         }
     }
 
-    .hideTags{
+    .hideTags   {
         height: 0;
-		display: none;
+        display: none;
         position: relative;
-		z-index: 3;
-		color: white;
-		opacity: 0;
-		transform: translateY(30px);
-		transition: 0.5s;
-        }
+        z-index: 3;
+        color: white;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.5s;
+    }
 `
 
 export const Info = styled.div`
@@ -82,8 +83,8 @@ export const Description = styled.div`
 
 export const TagList = styled.div`
     margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px 8px;
     max-width: 100%;
 `
