@@ -21,7 +21,26 @@ export default function Home() {
       <Container>
         <h1>Hot</h1>
 
-        <Swiper slidesPerView={6.4}  spaceBetween={30} loop={true} navigation={false} className="mySwiper">
+        <Swiper  
+          slidesPerView={1.8}  
+          spaceBetween={30} 
+          loop={true} 
+          navigation={false} 
+          className="mySwiper" 
+          breakpoints={{
+            "600": {
+              "slidesPerView": 2,
+            },
+            "800": {
+              "slidesPerView": 3,
+            },
+            "1100": {
+              "slidesPerView": 4,
+            },
+            "1300": {
+              "slidesPerView": 5.2,
+            }
+          }}>
           <SwiperSlide>
             <Card />
           </SwiperSlide>
