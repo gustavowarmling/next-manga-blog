@@ -52,39 +52,29 @@ export const Info = styled.div`
     span {
         color: gray;
     }
-
-    div:first-child {
-        position: absolute;
-        margin-top: -5rem;
-    }
-
-    div {
-        display: flex;
-        justify-content: space-between;
-    }
 `
 
 export const Description = styled.div`
     margin-left: 1rem;
     
     div {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     span {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 `
 
 
 export const TagList = styled.div`
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 26px 8px;
+    gap: 8px;
     max-width: 100%;
 `

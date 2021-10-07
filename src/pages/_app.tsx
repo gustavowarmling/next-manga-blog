@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import { SideMenu } from '../components/SideMenu'
 import { useState } from 'react';
 
+import "swiper/css/bundle";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [isOpen, setIsOpen] = useState(false);
