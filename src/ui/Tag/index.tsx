@@ -7,9 +7,7 @@ interface TagProps {
 export default function Tag({children}: TagProps) {
     return (
         <StyledTag>
-            <span>
-                {children}
-            </span>
+            {children}       
         </StyledTag>
     )
 }

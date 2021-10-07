@@ -17,8 +17,9 @@ export const Container = styled.div`
         }
 		
         &:before {
-			opacity: 1
+			opacity: 1;
         }
+
 		.hideTags {
 			opacity: 1;
 			transform: translateY(-22rem);
@@ -27,16 +28,16 @@ export const Container = styled.div`
         }
     }
 
-    .hideTags{
+    .hideTags   {
         height: 0;
-		display: none;
+        display: none;
         position: relative;
-		z-index: 3;
-		color: white;
-		opacity: 0;
-		transform: translateY(30px);
-		transition: 0.5s;
-        }
+        z-index: 3;
+        color: white;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.5s;
+    }
 `
 
 export const Info = styled.div`
@@ -51,39 +52,29 @@ export const Info = styled.div`
     span {
         color: gray;
     }
-
-    div:first-child {
-        position: absolute;
-        margin-top: -5rem;
-    }
-
-    div {
-        display: flex;
-        justify-content: space-between;
-    }
 `
 
 export const Description = styled.div`
     margin-left: 1rem;
     
     div {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     span {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 `
 
 
 export const TagList = styled.div`
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 10px;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     max-width: 100%;
 `

@@ -4,7 +4,11 @@ import { Container, Info, Description, TagList }  from './styles';
 export default function Card() {
     return (
         <Container>
-            <img src="https://images-na.ssl-images-amazon.com/images/I/31ED3F1GGRL.jpg" alt="" />
+            <img 
+                src="https://images-na.ssl-images-amazon.com/images/I/31ED3F1GGRL.jpg" 
+                alt="" 
+            />
+
             <Description className="hideTags">
                 <div>
                     <p>Title</p>
@@ -21,15 +25,9 @@ export default function Card() {
                 <div>
                     <p>Tags</p>
                     <TagList>
-                        <Tag>
-                            Horror
-                        </Tag>
-                        <Tag>
-                            Dystopian
-                        </Tag>
-                        <Tag>
-                            Suspense
-                        </Tag>
+                        <Tag> Horror </Tag>
+                        <Tag> Dystopian </Tag>
+                        <Tag> Suspense </Tag>
                     </TagList>
                 </div>
             </Description>
