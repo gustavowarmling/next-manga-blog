@@ -5,6 +5,9 @@ export const GlobalStyle = createGlobalStyle`
         --blue-300: #202b36;
         --blue-500: #141924;
         --blue-900: #0D1017;
+        --title: #F4F5F6;
+        --subtitle: #C5CED3;
+        --description: #96a7b0;
     }
   
   * {
@@ -24,13 +27,13 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: var(--blue-900);
-    color: #fff;
+    color: var(--title);
   }
 
   a {
     cursor: pointer;
     text-decoration: none;
-    color: #fff;
+    color: var(--title);
   }
 
   body, input, textarea, select, button {
