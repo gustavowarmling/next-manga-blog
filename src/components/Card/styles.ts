@@ -5,7 +5,6 @@ export const Container = styled.div`
     flex-direction: column;
     width: 16rem;
     height: 28.75rem;
-	position: relative;
 	
     img {
         transition: 0.2s ease-out;
@@ -31,7 +30,6 @@ export const Container = styled.div`
     .hideTags   {
         height: 0;
         display: none;
-        position: relative;
         z-index: 3;
         color: white;
         opacity: 0;
@@ -40,7 +38,7 @@ export const Container = styled.div`
     }
 `
 
-export const Info = styled.div`
+export const CardFooter = styled.div`
     background: var(--blue-500);
     padding: 1rem;
     border-radius: 0 0 0.5rem 0.5rem;
@@ -56,10 +54,10 @@ export const Info = styled.div`
 
 export const Description = styled.div`
     margin-left: 1rem;
-    
-    div {
+`
+
+export const Info = styled.div`
         margin-bottom: 1rem;
-    }
 
     p {
         font-size: 1.2rem;
@@ -77,4 +75,9 @@ export const TagList = styled.div`
     flex-wrap: wrap;
     gap: 8px;
     max-width: 100%;
+`
+
+export const LikePositioning = styled.div`
+    position: absolute;
+    right: 1rem;
 `
