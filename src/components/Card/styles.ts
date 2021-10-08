@@ -45,10 +45,15 @@ export const CardFooter = styled.div`
     
     p {
         font-size: 1.4rem;
+        width: 230px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     span {
         color: gray;
+        width: 230px;
     }
 `
 
@@ -80,4 +85,10 @@ export const TagList = styled.div`
 export const LikePositioning = styled.div`
     position: absolute;
     right: 1rem;
+    font-size: 1.3rem;
+
+    svg {
+        font-size: 2rem;
+        margin-left: 0.4rem;
+    }
 `
