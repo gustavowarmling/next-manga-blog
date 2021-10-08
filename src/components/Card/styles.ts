@@ -52,7 +52,7 @@ export const CardFooter = styled.div`
     }
 
     span {
-        color: gray;
+        color: var(--subtitle);
         width: 230px;
     }
 `

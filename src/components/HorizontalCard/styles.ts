@@ -39,10 +39,11 @@ export const Info = styled.div`
 
     span {
         font-size: 0.8rem;
-        color: gray;
+        color: var(--subtitle);
     }
 
     p {
+        color: var(--description);
         margin-top: 0.6rem;
         font-size: 0.8rem;
         line-height: 1.3rem;
