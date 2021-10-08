@@ -20,6 +20,8 @@ export default function Tag({children, id}: TagProps) {
                 effect="solid" 
                 backgroundColor="var(--blue-500)" 
                 textColor="var(--subtitle)"
+                border={true}
+                borderColor="var(--blue-300)"
             />
         </> 
     )
