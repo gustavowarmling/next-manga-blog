@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.main`
     margin-top: 4rem;
-    
-    
 
     @media(max-width: 1120px) {
         padding: 0 .8rem;
@@ -11,7 +9,7 @@ export const Container = styled.main`
 `
 export const ContentContainer = styled.div`
     max-width: 1120px;
-    margin: 4rem auto;
+    margin: 0 auto 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 `

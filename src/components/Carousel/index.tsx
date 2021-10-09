@@ -10,7 +10,7 @@ import SwiperCore, {
 } from 'swiper';
 
 import { Card } from '../../components/Card'
-import { CarouselTitle } from './styles';
+import { CarouselTitle, Container } from './styles';
 
 SwiperCore.use([Pagination,Navigation]);
 
@@ -22,7 +22,7 @@ export function Carousel({ title }: CarouselProps) {
   const { width } = useWindowSize();
 
   return(
-    <>
+    <Container>
       <CarouselTitle>{title}</CarouselTitle>
       <Swiper  
         slidesPerView={width ? width/300 : 5.5}    
@@ -55,6 +55,6 @@ export function Carousel({ title }: CarouselProps) {
           <Card />
         </SwiperSlide>
       </Swiper>
-    </>
+    </ Container>
   )
 }

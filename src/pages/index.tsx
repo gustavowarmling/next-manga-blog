@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Container>
         <Carousel title="Hottest 🔥"/>
+        <Carousel title="Most Viewed 🧨"/>
       
         <ContentContainer>
           <HorizontalPublications title="teste"/>
