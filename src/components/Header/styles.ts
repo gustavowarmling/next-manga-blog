@@ -33,7 +33,7 @@ export const Content = styled.div`
 `
 
 export const LogoWrapper = styled.div`
-    max-width: 12.5rem;
+    max-width: 200px;
 `
 
 export const StyledButton = styled.button`

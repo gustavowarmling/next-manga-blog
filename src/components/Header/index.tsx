@@ -9,7 +9,7 @@ interface HeaderProps {
     setIsOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function Header({ setIsOpen }: HeaderProps) {
+export function Header({ setIsOpen }: HeaderProps) {
     function handleOpenMenu() {
         setIsOpen(true);
     }

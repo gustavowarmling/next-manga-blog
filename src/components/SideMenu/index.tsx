@@ -8,7 +8,7 @@ interface SideMenuProps {
   setIsOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-export const SideMenu= ({ isOpen, setIsOpen }: SideMenuProps) => {
+export const SideMenu = ({ isOpen, setIsOpen }: SideMenuProps) => {
   function handleCloseModal() {
     setIsOpen(false);
   }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.label`
-    max-width: 16rem;
+    max-width: 256px;
     width: 100%;
     height: 3rem;
     display: grid;

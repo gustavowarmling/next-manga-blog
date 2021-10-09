@@ -1,8 +1,8 @@
-import Tag from '../../ui/Tag';
-import Likes from '../../ui/Likes';
+import { Tag } from '../../ui/Tag';
+import { Likes } from '../../ui/Likes';
 import { Container, CardFooter, Description, TagList, Info, LikePositioning }  from './styles';
 
-export default function Card() {
+export function Card() {
     return (
         <Container>
             <img 
@@ -15,28 +15,31 @@ export default function Card() {
                     <p>Title</p>
                     <span>Battle Royale</span>
                 </Info>
+
                 <Info>
                     <p>Author</p>
                     <span>Koushun Takami</span>
                 </Info>
+
                 <Info>
                     <p>Publication Date</p>
                     <span>01/04/1999</span>
                 </Info>
+
                 <Info>
                     <p>Tags</p>
                     <TagList>
-                        <Tag id="teste"> Horror </Tag>
-                        <Tag id="teste"> Dystopian </Tag>
-                        <Tag id="teste"> Suspense </Tag>
+                        <Tag title="Horror" />
+                        <Tag title="Dystopian" />
+                        <Tag title="Suspense" />
                     </TagList>
                 </Info>
+                
                 <LikePositioning>
-                    <Likes>
-                        {2300}
-                    </Likes>
+                    <Likes quantity={2300} />
                 </LikePositioning>
             </Description>
+
             <CardFooter>
                 <p>Battle Royale</p>
                 <span>Koushun Takami</span>

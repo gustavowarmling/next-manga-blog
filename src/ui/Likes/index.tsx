@@ -2,11 +2,14 @@ import { AiFillHeart } from 'react-icons/ai';
 import { LikesStyle } from './styles'
 
 interface LikesProps {
-    children: Number
+    quantity: Number
 }
 
-export default function Likes({children}: LikesProps) {
+export function Likes({ quantity }: LikesProps) {
     return (
-        <LikesStyle><span>{children}</span> <span><AiFillHeart /></span></LikesStyle>
+        <LikesStyle>
+            <span>{quantity}</span> 
+            <AiFillHeart />
+        </LikesStyle>
     )
 }
