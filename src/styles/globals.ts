@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
+        --main-color: #A92C2B;
+
         --blue-300: #202b36;
         --blue-500: #141924;
         --blue-900: #0D1017;
@@ -38,5 +40,10 @@ export const GlobalStyle = createGlobalStyle`
 
   body, input, textarea, select, button {
     font: 400 1rem "Poppins", sans-serif;
+  }
+
+  ::selection {
+    background: var(--main-color);
+    color: var(--title);
   }
 `
