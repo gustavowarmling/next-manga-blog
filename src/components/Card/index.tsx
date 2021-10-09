@@ -26,9 +26,9 @@ export default function Card() {
                 <Info>
                     <p>Tags</p>
                     <TagList>
-                        <Tag> Horror </Tag>
-                        <Tag> Dystopian </Tag>
-                        <Tag> Suspense </Tag>
+                        <Tag id="teste"> Horror </Tag>
+                        <Tag id="teste"> Dystopian </Tag>
+                        <Tag id="teste"> Suspense </Tag>
                     </TagList>
                 </Info>
                 <LikePositioning>
