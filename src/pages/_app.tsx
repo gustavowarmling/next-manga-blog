@@ -1,9 +1,9 @@
-import { GlobalStyle } from '../styles/globals'
-import type { AppProps } from 'next/app'
+import { GlobalStyle } from "../styles/globals";
+import type { AppProps } from "next/app";
 
-import { Header } from '../components/Header'
-import { SideMenu } from '../components/SideMenu'
-import { useState } from 'react';
+import { Header } from "../components/Header";
+import { SideMenu } from "../components/SideMenu";
+import { useState } from "react";
 
 import "swiper/css/bundle";
 
@@ -12,12 +12,12 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Header setIsOpen={setIsOpen}/>
-      <SideMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
+      <Header setIsOpen={setIsOpen} />
+      <SideMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <Component {...pageProps} />
       <GlobalStyle />
     </>
-    )
+  );
 }
-export default MyApp
+export default MyApp;

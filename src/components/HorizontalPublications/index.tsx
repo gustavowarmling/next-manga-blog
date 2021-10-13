@@ -4,18 +4,18 @@ import { HorizontalCard } from "../HorizontalCard";
 import { Container, Publications } from "./styles";
 
 type HorizontalPublicationsProps = {
- title: string; 
-}
+  title: string;
+};
 
 export function HorizontalPublications({ title }: HorizontalPublicationsProps) {
-  return(
+  return (
     <Container>
-    <SectionHeader title={title} pathTo='#'/>
+      <SectionHeader title={title} pathTo="#" />
 
-    <Publications>
-      <HorizontalCard />
-      <HorizontalCard />
-    </Publications>
-  </Container>
-  )
+      <Publications>
+        <HorizontalCard />
+        <HorizontalCard />
+      </Publications>
+    </Container>
+  );
 }

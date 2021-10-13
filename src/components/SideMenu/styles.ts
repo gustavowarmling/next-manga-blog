@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 const openMenu = keyframes`
   0% { 
@@ -23,7 +23,7 @@ export const SideMenuWrapper = styled.div`
 
   &.open {
     animation-name: ${openMenu};
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-timing-function: ease-in;
     display: initial;
     opacity: 1;
@@ -41,7 +41,7 @@ export const SideMenuContent = styled.div`
   border-radius: 8px;
   padding: 32px;
   z-index: 1000;
-`
+`;
 
 export const LinkCollection = styled.div`
   display: flex;
@@ -56,14 +56,14 @@ export const LinkCollection = styled.div`
       margin-bottom: 1.4rem;
     }
   }
-`
+`;
 
 export const CollectionTitle = styled.h2`
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 1rem;
-`
+`;
 
 export const LogoWrapper = styled.div`
   margin-bottom: 1.4rem;
-`
+`;

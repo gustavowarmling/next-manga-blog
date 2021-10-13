@@ -1,7 +1,13 @@
-import { Dispatch, SetStateAction } from 'react';
-import Link from 'next/link';
-import { Logo } from '../../ui/Logo';
-import { SideMenuWrapper, SideMenuContent, LogoWrapper, LinkCollection, CollectionTitle } from './styles';
+import { Dispatch, SetStateAction } from "react";
+import Link from "next/link";
+import { Logo } from "../../ui/Logo";
+import {
+  SideMenuWrapper,
+  SideMenuContent,
+  LogoWrapper,
+  LinkCollection,
+  CollectionTitle,
+} from "./styles";
 
 interface SideMenuProps {
   isOpen: boolean;
@@ -13,8 +19,11 @@ export const SideMenu = ({ isOpen, setIsOpen }: SideMenuProps) => {
     setIsOpen(false);
   }
 
-  return(
-    <SideMenuWrapper className={isOpen ? 'open' : ''} onClick={handleCloseModal}>
+  return (
+    <SideMenuWrapper
+      className={isOpen ? "open" : ""}
+      onClick={handleCloseModal}
+    >
       <SideMenuContent>
         <LogoWrapper>
           <Logo />
@@ -63,5 +72,5 @@ export const SideMenu = ({ isOpen, setIsOpen }: SideMenuProps) => {
         </LinkCollection>
       </SideMenuContent>
     </SideMenuWrapper>
-  )
-}
+  );
+};

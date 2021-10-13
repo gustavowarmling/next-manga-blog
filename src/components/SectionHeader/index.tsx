@@ -1,14 +1,14 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
 type SectionHeaderProps = {
   title: string;
   pathTo: string;
-}
+};
 
-export function SectionHeader({ title, pathTo = '#' }: SectionHeaderProps) {
-  return(
+export function SectionHeader({ title, pathTo = "#" }: SectionHeaderProps) {
+  return (
     <Container>
       <h2>{title}</h2>
 
@@ -16,5 +16,5 @@ export function SectionHeader({ title, pathTo = '#' }: SectionHeaderProps) {
         <a>see all</a>
       </Link>
     </Container>
-  )
+  );
 }

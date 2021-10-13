@@ -1,40 +1,38 @@
-import { useWindowSize } from '../../hooks/useWindowSize';
+import { useWindowSize } from "../../hooks/useWindowSize";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import SwiperCore, {
-  Pagination,Navigation
-} from 'swiper';
+import SwiperCore, { Pagination, Navigation } from "swiper";
 
-import { Card } from '../../components/Card'
-import { CarouselTitle, Container } from './styles';
+import { Card } from "../../components/Card";
+import { CarouselTitle, Container } from "./styles";
 
-SwiperCore.use([Pagination,Navigation]);
+SwiperCore.use([Pagination, Navigation]);
 
 type CarouselProps = {
-  title: string; 
- }
+  title: string;
+};
 
 export function Carousel({ title }: CarouselProps) {
   const { width } = useWindowSize();
 
-  return(
+  return (
     <Container>
       <CarouselTitle>{title}</CarouselTitle>
-      <Swiper  
-        slidesPerView={width ? width/300 : 5.5}    
-        spaceBetween={30} 
-        loop={true} 
-        navigation={false} 
+      <Swiper
+        slidesPerView={width ? width / 300 : 5.5}
+        spaceBetween={30}
+        loop={true}
+        navigation={false}
         className="mySwiper"
-        >
+      >
         <SwiperSlide>
           <Card />
         </SwiperSlide>
-        
+
         <SwiperSlide>
           <Card />
         </SwiperSlide>
@@ -55,6 +53,6 @@ export function Carousel({ title }: CarouselProps) {
           <Card />
         </SwiperSlide>
       </Swiper>
-    </ Container>
-  )
+    </Container>
+  );
 }
