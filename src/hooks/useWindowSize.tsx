@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 type windowSizeProps = {
   width: number | undefined;
   height: number | undefined;
-}
+};
 
 export function useWindowSize() {
   const [windowSize, setWindowSize] = useState<windowSizeProps>({
@@ -24,4 +24,4 @@ export function useWindowSize() {
   }, []);
 
   return windowSize;
-};
+}
