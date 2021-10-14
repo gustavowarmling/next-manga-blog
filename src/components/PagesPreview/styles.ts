@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const PagesPreviewContainer = styled.div`
+  width: 100%;
+
   h2 {
     font-size: 2rem;
     margin-bottom: 16px;
@@ -9,15 +11,12 @@ export const PagesPreviewContainer = styled.div`
 
 export const PagesContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 140px);
   gap: 1.5rem;
 
   img {
     max-height: 200px;
-    max-width: 100%;
-  }
-
-  @media (max-width: 650px) {
-    grid-template-columns: 1fr 1fr;
+    width: 140px;
   }
 `;
