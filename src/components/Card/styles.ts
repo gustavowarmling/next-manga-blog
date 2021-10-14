@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 16rem;
-  height: 28.75rem;
+  max-width: 16rem;
+  width: 100%;
+  max-height: 28.75rem;
 
   img {
     transition: 0.2s ease-out;
@@ -20,8 +22,8 @@ export const Container = styled.div`
     }
 
     .hideTags {
+      position: absolute;
       opacity: 1;
-      transform: translateY(-22rem);
       display: flex;
       flex-direction: column;
     }
@@ -45,7 +47,7 @@ export const CardFooter = styled.div`
 
   p {
     font-size: 1.4rem;
-    width: 230px;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
