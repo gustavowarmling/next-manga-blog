@@ -8,6 +8,7 @@ export default function Book() {
     <Container>
       <Banner
         title="Battle Royale"
+        author="Koushun Takami"
         image="https://images-na.ssl-images-amazon.com/images/I/31ED3F1GGRL.jpg"
       />
       <ContentContainer>

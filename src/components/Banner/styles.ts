@@ -11,12 +11,20 @@ export const BannerContainer = styled.div`
     filter: blur(4px);
   }
 
-  h1 {
+  div {
     position: absolute;
     top: 50%;
     left: 50%;
     text-align: center;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 3rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+      color: var(--subtitle);
+    }
   }
 `;
