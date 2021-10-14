@@ -12,8 +12,8 @@ export default function Home() {
         <Carousel title="Most Viewed 🧨" />
 
         <ContentContainer>
-          <HorizontalPublications title="teste" />
-          <TagList title="teste" />
+          <HorizontalPublications title="New Publications" />
+          <TagList title="Popular tags" />
         </ContentContainer>
       </Container>
     </>

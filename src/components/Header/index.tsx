@@ -1,5 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
 
+import Link from "next/link";
 import { SearchBox } from "../../ui/SearchBox";
 import { Container, Content, LogoWrapper, StyledButton } from "./styles";
 import { Logo } from "../../ui/Logo";
@@ -22,9 +23,13 @@ export function Header({ setIsOpen }: HeaderProps) {
             <IoMenuOutline color="white" />
           </StyledButton>
 
-          <LogoWrapper>
-            <Logo />
-          </LogoWrapper>
+          <Link href="/">
+            <a>
+              <LogoWrapper>
+                <Logo />
+              </LogoWrapper>
+            </a>
+          </Link>
         </div>
 
         <SearchBox />
