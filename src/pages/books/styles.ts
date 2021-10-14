@@ -15,7 +15,7 @@ export const ContentContainer = styled.div`
   gap: 24px;
   justify-items: center;
 
-  @media (max-width: 650px) {
+  @media (max-width: 670px) {
     grid-template-columns: 1fr;
   }
 `;
