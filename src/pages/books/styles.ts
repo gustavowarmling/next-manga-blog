@@ -13,8 +13,9 @@ export const ContentContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 24px;
+  justify-items: center;
 
   @media (max-width: 650px) {
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr;
   }
 `;
