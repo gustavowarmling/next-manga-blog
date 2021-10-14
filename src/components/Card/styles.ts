@@ -60,7 +60,8 @@ export const CardFooter = styled.div`
 `;
 
 export const Description = styled.div`
-  margin-left: 1rem;
+  padding: 0 1rem;
+  top: 0;
 `;
 
 export const Info = styled.div`
