@@ -8,7 +8,7 @@ interface TagProps {
 
 export function Tag({ title }: TagProps) {
   return (
-    <Link href="">
+    <Link href="http://localhost:3000/tags/1">
       <a>
         <StyledTag data-tip="Tag description" data-for={title}>
           {title}
