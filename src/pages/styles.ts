@@ -12,4 +12,10 @@ export const ContentContainer = styled.div`
   margin: 0 auto 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  justify-items: center;
+
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+  }
 `;
