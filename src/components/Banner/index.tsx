@@ -2,7 +2,7 @@ import { BannerContainer } from "./styles";
 
 type BannerProps = {
   title: string;
-  author: string;
+  author?: string;
   image: string;
 };
 
