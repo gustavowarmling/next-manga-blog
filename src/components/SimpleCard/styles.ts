@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MiniCardContainer = styled.div`
+export const SimpleCardContainer = styled.div`
   position: relative;
   width: 140px;
 
@@ -22,7 +22,7 @@ export const MiniCardContainer = styled.div`
   }
 `;
 
-export const MiniCardInfo = styled.div`
+export const SimpleCardInfo = styled.div`
   display: none;
   position: absolute;
   top: 35%;
