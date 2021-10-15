@@ -11,9 +11,18 @@ export default function Home() {
           <TagBox title="Popular tags" />
         </Wrapper>
 
-        <Carousel title="New Publications 🎇" pathTo={"#"} />
-        <Carousel title="Hottest 🔥" pathTo={"#"} />
-        <Carousel title="Most Viewed 🧨" pathTo={"#"} />
+        <Carousel
+          title="New Publications 🎇"
+          pathTo={"http://localhost:3000/publications"}
+        />
+        <Carousel
+          title="Hottest 🔥"
+          pathTo={"http://localhost:3000/publications"}
+        />
+        <Carousel
+          title="Most Viewed 🧨"
+          pathTo={"http://localhost:3000/publications"}
+        />
       </Container>
     </>
   );

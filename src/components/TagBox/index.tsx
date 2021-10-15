@@ -10,7 +10,10 @@ type TagBoxProps = {
 export function TagBox({ title }: TagBoxProps) {
   return (
     <Container>
-      <SectionHeader title={title} pathTo="#" />
+      <SectionHeader
+        title={title}
+        pathTo="http://localhost:3000/publications"
+      />
 
       <PopularTagsContainer>
         <PopularTags>
