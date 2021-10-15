@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { InfoContainer, Info } from "./style";
 
 export function TagInfo() {
