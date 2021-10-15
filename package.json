@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@types/react-icons": "^3.0.0",
+    "@types/react-modal": "^3.13.0",
     "@types/styled-components": "^5.1.14",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
+    "react-modal": "^3.14.3",
     "react-tooltip": "^4.2.21",
     "styled-components": "^5.3.1",
     "swiper": "^7.0.8"
