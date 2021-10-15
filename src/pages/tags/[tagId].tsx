@@ -12,7 +12,7 @@ export default function Tags() {
       />
       <ContentContainer>
         <TagInfo />
-        <BooksPreview />
+        <BooksPreview title="Books" />
       </ContentContainer>
     </Container>
   );

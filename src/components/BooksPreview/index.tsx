@@ -1,19 +1,23 @@
-import { MiniCard } from "../MiniCard";
+import { SimpleCard } from "../SimpleCard";
 import { PagesContainer, PagesPreviewContainer } from "./styles";
 
-export function BooksPreview() {
+interface BooksPreviewProps {
+  title: string;
+}
+
+export function BooksPreview({ title }: BooksPreviewProps) {
   return (
     <PagesPreviewContainer>
-      <h2>Books</h2>
+      <h2>{title}</h2>
       <PagesContainer>
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
       </PagesContainer>
     </PagesPreviewContainer>
   );
