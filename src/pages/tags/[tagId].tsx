@@ -1,9 +1,9 @@
 import { Banner } from "../../components/Banner";
 import { TagInfo } from "../../components/TagInfo";
-import { BooksPreview } from "../../components/BooksPreview";
-import { Container, ContentContainer } from "./styles";
+import { BooksGrid } from "../../components/BooksGrid";
+import { Container, ContentContainer } from "./tagStyles";
 
-export default function Tags() {
+export default function tag() {
   return (
     <Container>
       <Banner
@@ -12,7 +12,7 @@ export default function Tags() {
       />
       <ContentContainer>
         <TagInfo />
-        <BooksPreview title="Books" />
+        <BooksGrid title="Books" />
       </ContentContainer>
     </Container>
   );
