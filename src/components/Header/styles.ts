@@ -15,18 +15,6 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  button {
-    display: flex;
-    margin-right: 2rem;
-  }
-
-  div:first-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1rem;
-  }
-
   @media (max-width: 1120px) {
     padding: 0 0.8rem;
   }
@@ -34,11 +22,4 @@ export const Content = styled.div`
 
 export const LogoWrapper = styled.div`
   max-width: 200px;
-`;
-
-export const StyledButton = styled.button`
-  border: none;
-  background: none;
-  font-size: 2rem;
-  cursor: pointer;
 `;

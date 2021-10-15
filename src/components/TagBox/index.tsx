@@ -3,11 +3,11 @@ import { Tag } from "../../ui/Tag";
 
 import { Container, PopularTags, PopularTagsContainer } from "./styles";
 
-type TagListProps = {
+type TagBoxProps = {
   title: string;
 };
 
-export function TagList({ title }: TagListProps) {
+export function TagBox({ title }: TagBoxProps) {
   return (
     <Container>
       <SectionHeader title={title} pathTo="#" />

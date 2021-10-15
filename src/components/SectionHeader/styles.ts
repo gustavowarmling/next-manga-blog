@@ -11,8 +11,4 @@ export const Container = styled.div`
     text-transform: uppercase;
     margin: 0;
   }
-
-  a {
-    color: gray;
-  }
 `;

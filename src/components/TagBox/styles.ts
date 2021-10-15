@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 480px;
+  max-width: 100%;
 `;
 
 export const PopularTagsContainer = styled.div`

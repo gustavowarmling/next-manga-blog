@@ -10,10 +10,10 @@ type SectionHeaderProps = {
 export function SectionHeader({ title, pathTo = "#" }: SectionHeaderProps) {
   return (
     <Container>
-      <h2>{title}</h2>
-
       <Link href={pathTo}>
-        <a>see all</a>
+        <a>
+          <h2>{title}</h2>
+        </a>
       </Link>
     </Container>
   );
