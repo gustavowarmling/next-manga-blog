@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PagesPreviewContainer = styled.div`
+export const BooksGridContainer = styled.div`
   width: 100%;
 
   h2 {
@@ -9,7 +9,7 @@ export const PagesPreviewContainer = styled.div`
   }
 `;
 
-export const PagesContainer = styled.div`
+export const BooksContainer = styled.div`
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 140px);

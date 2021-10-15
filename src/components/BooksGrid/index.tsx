@@ -1,15 +1,15 @@
 import { SimpleCard } from "../SimpleCard";
-import { PagesContainer, PagesPreviewContainer } from "./styles";
+import { BooksContainer, BooksGridContainer } from "./styles";
 
-interface BooksPreviewProps {
+interface BooksGridProps {
   title: string;
 }
 
-export function BooksPreview({ title }: BooksPreviewProps) {
+export function BooksGrid({ title }: BooksGridProps) {
   return (
-    <PagesPreviewContainer>
+    <BooksGridContainer>
       <h2>{title}</h2>
-      <PagesContainer>
+      <BooksContainer>
         <SimpleCard />
         <SimpleCard />
         <SimpleCard />
@@ -18,7 +18,7 @@ export function BooksPreview({ title }: BooksPreviewProps) {
         <SimpleCard />
         <SimpleCard />
         <SimpleCard />
-      </PagesContainer>
-    </PagesPreviewContainer>
+      </BooksContainer>
+    </BooksGridContainer>
   );
 }
