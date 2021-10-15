@@ -9,13 +9,4 @@ export const Container = styled.main`
   }
 `;
 
-export const ContentContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 24px;
-  justify-items: center;
-
-  @media (max-width: 670px) {
-    grid-template-columns: 1fr;
-  }
-`;
+export const ContentContainer = styled.div``;

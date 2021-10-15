@@ -1,9 +1,9 @@
 import { Banner } from "../../components/Banner";
 import { BookInfo } from "../../components/BookInfo";
 import { PagesPreview } from "../../components/PagesPreview";
-import { Container, ContentContainer } from "./styles";
+import { Container, ContentContainer } from "./postStyles";
 
-export default function Book() {
+export default function book() {
   return (
     <Container>
       <Banner
