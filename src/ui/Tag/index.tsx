@@ -13,6 +13,7 @@ export function Tag({ title }: TagProps) {
         <StyledTag data-tip="Tag description" data-for={title}>
           {title}
         </StyledTag>
+
         <ReactTooltip
           id={title}
           effect="solid"
