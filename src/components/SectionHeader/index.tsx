@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-import { Container } from "./styles";
+import { AiOutlineRight } from "react-icons/ai";
+import { Container, SeeAll } from "./styles";
 
 type SectionHeaderProps = {
   title: string;
@@ -9,12 +10,15 @@ type SectionHeaderProps = {
 
 export function SectionHeader({ title, pathTo = "#" }: SectionHeaderProps) {
   return (
-    <Container>
-      <Link href={pathTo}>
-        <a>
+    <Link href={pathTo}>
+      <a>
+        <Container>
           <h2>{title}</h2>
-        </a>
-      </Link>
-    </Container>
+          <SeeAll>
+            See all <AiOutlineRight />
+          </SeeAll>
+        </Container>
+      </a>
+    </Link>
   );
 }
